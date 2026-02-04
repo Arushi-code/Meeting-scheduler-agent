@@ -1,19 +1,14 @@
-# Project Documentation – Meeting Scheduler Agent
+# Meeting Scheduler Agent
 
 ## Overview
-This document provides detailed information about the Meeting Scheduler Agent, its design, and functionality.
+The Meeting Scheduler Agent is a GenAI-based assistant that automates meeting scheduling by understanding user requests, checking availability, and suggesting optimal time slots.
 
-## System Architecture
-- User Interface: Chat/Web Form
-- AI Engine: GenAI Model for NLP
-- Scheduler Logic: Availability matching
-- Calendar Service: External API integration
+## Key Features
+- Natural language understanding
+- Availability matching
+- Conflict-free scheduling
+- AI-based recommendations
 
-## Use Case
-A user wants to schedule a meeting with multiple participants. The agent collects availability, suggests suitable time slots, and finalizes the meeting after confirmation.
-
-## Future Enhancements
-- Real-time calendar integration
-- Voice-based scheduling
-- Conflict resolution using priority rules
-- Email and notification support
+## Repository Contents
+- README.md – Project overview
+- DOCUMENTATION.md – Detailed project documentation
