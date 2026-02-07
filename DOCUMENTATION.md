@@ -1,4 +1,4 @@
-# 📘 Meeting Scheduler Agent – Technical Documentation
+# Meeting Scheduler Agent – Technical Documentation
 
 ## 1. Introduction
 The Meeting Scheduler Agent is a Generative AI–inspired system that assists users in scheduling meetings efficiently.  
