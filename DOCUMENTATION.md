@@ -1,43 +1,98 @@
-# Project Documentation – Meeting Scheduler Agent
+# 📘 Meeting Scheduler Agent – Technical Documentation
 
-## 1. Overview
-The Meeting Scheduler Agent is a GenAI-based intelligent system designed to automate the process of scheduling meetings. It helps users by understanding meeting requests, checking availability, and suggesting the most suitable time slots.
+## 1. Introduction
+The Meeting Scheduler Agent is a Generative AI–inspired system that assists users in scheduling meetings efficiently.  
+It processes user availability and preferences to suggest the most suitable meeting time while avoiding conflicts.
 
-## 2. Problem Description
-Scheduling meetings manually often requires multiple messages and coordination between participants, which can be time-consuming and inefficient. Conflicts in availability further increase the complexity.
+This document provides technical and functional details of the project.
 
-## 3. Proposed Solution
-The Meeting Scheduler Agent uses Generative AI to understand natural language inputs from users and automate the meeting scheduling process. It suggests optimal meeting times based on participant availability and user constraints.
+---
 
-## 4. System Components
-- User Interface: Chat-based or web form
-- AI Engine: GenAI model for natural language processing
-- Scheduler Logic: Availability matching and conflict handling
-- Calendar Service: Google Calendar API (conceptual)
-- Data Storage: SQLite / Google Sheets (conceptual)
+## 2. Problem Statement
+Scheduling meetings manually is time-consuming and often leads to conflicts due to overlapping schedules, miscommunication, or human error.
+
+The goal of this project is to design an intelligent agent that:
+- Automates meeting scheduling
+- Minimizes conflicts
+- Saves time and effort
+
+---
+
+## 3. System Overview
+The Meeting Scheduler Agent works by:
+- Accepting user input related to availability
+- Analyzing possible meeting time slots
+- Selecting the optimal time based on defined rules
+
+The system simulates the behavior of a GenAI agent using logic-based decision making.
+
+---
+
+## 4. Architecture
+The project follows a simple modular architecture:
+
+1. **Input Module**
+   - Collects user availability and meeting preferences
+
+2. **Processing Module**
+   - Analyzes available time slots
+   - Checks conflicts between participants
+
+3. **Decision Module**
+   - Selects the best suitable meeting time
+
+4. **Output Module**
+   - Displays the suggested meeting schedule
+
+---
 
 ## 5. Workflow
-1. User submits a meeting request
-2. AI agent analyzes the request
-3. Participant availability is checked
-4. Best possible meeting slots are generated
-5. User selects a preferred slot
-6. Meeting is scheduled and confirmation is sent
+1. User provides preferred time or availability
+2. System validates the input
+3. Available time slots are analyzed
+4. Conflicting slots are eliminated
+5. Best possible meeting time is selected
+6. Result is displayed to the user
 
-## 6. Use Case Example
-A user wants to schedule a one-hour meeting with three participants next week. The agent processes the request, checks availability, and suggests suitable time slots. After confirmation, the meeting is scheduled successfully.
+---
 
-## 7. Advantages
-- Saves time
-- Reduces scheduling conflicts
-- Improves productivity
-- Easy to use
+## 6. Technologies Used
+- **Programming Language:** Python
+- **Approach:** Rule-based / Logic-driven AI
+- **Version Control:** GitHub
 
-## 8. Future Enhancements
-- Real-time calendar integration
-- Email and notification support
-- Voice-based meeting scheduling
-- Priority-based conflict resolution
+---
 
-## 9. Conclusion
-This project demonstrates how GenAI can be effectively used to automate everyday tasks like meeting scheduling. The Meeting Scheduler Agent showcases the practical application of AI agents in productivity tools.
+## 7. Use Case Scenario
+**Example:**
+- User A: Available from 10 AM – 1 PM  
+- User B: Available from 11 AM – 3 PM  
+
+**Result:**  
+Suggested Meeting Time → **11 AM – 1 PM**
+
+---
+
+## 8. Limitations
+- No real-time calendar integration
+- Works on predefined availability inputs
+- Does not use advanced ML models
+
+---
+
+## 9. Future Scope
+- Integration with Google Calendar or Outlook
+- Email or push notification support
+- Web-based interface
+- Advanced GenAI reasoning using LLMs
+
+---
+
+## 10. Conclusion
+The Meeting Scheduler Agent demonstrates how GenAI concepts can be applied to solve real-world productivity problems.  
+It highlights structured thinking, automation, and intelligent decision-making in a simple yet effective manner.
+
+---
+
+## 11. Author
+Arushi
